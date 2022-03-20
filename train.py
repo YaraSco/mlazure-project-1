@@ -69,11 +69,6 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
-    
-    # Save model in "outputs" directory
-    joblib.dump(value=model, filename='outputs/model.pkl')
-    
-    run.complete()
 
 if __name__ == '__main__':
     main()
