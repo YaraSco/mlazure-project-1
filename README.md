@@ -14,11 +14,15 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+This project uses the tabular dataset in the URL "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv". This dataset has 19 attributes for training and the attribute 'y' for predictions. The attribute 'y' has two classes 'no' and 'yes'. It determines if a potentiel client would accept to make a deposit at the bank or decline the offer.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The model used by hyperdrive and provided by Scikit-learn, LogisticRegression, had an accuracy of 0.9095. However, the model obtained by an AutoMl run had a better accuracy with 0.9181. So, the best performing model was Voting Ensemble of the Automl run.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+The diagram of the pipeline architecture is
+
 
 **What are the benefits of the parameter sampler you chose?**
 
