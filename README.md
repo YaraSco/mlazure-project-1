@@ -39,9 +39,9 @@ The classification algorithm is the Logistic Regression provided by  Scikit-lear
 
 **What are the benefits of the parameter sampler you chose?**
 Azure Machine Learning supports 3 sampling methods:
-  Grid sampling. It only supports choice. So, we can not use it for "C", which uses unifom function.
-  Bayesian sampling. It chooses based on the previous samples, and it is much costly in terms of the budget.
-  Random sampling. It supports the functions we need "choice" and "uniform". Also, it is not as costly as the Bayesian sampling. Moreover, it supports early termination of low-performance runs.
+ - Grid sampling. It only supports choice. So, we can not use it for "C", which uses unifom function.
+ - Bayesian sampling. It chooses based on the previous samples, and it is much costly in terms of the budget.
+ - Random sampling. It supports the functions we need "choice" and "uniform". Also, it is not as costly as the Bayesian sampling. Moreover, it supports early termination of low-performance runs.
 So, we chose random sampling as the parameter sampler. 
 
 **What are the benefits of the early stopping policy you chose?**
