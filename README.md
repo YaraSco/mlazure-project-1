@@ -21,8 +21,8 @@ The model used by hyperdrive and provided by Scikit-learn, LogisticRegression, h
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
-The diagram of the pipeline architecture is
-
+The diagram of the pipeline architecture is 
+<img src="./images/pipeline architecture.PNG">
 
 **What are the benefits of the parameter sampler you chose?**
 
