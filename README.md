@@ -52,7 +52,14 @@ We chose "BanditPolicy(slack_factor=0.1, evaluation_interval=1, delay_evaluation
 As in the architecture pipeline explained previously, we transform the data and split it. We register the training data in a default datastore. After that, we set parameters for AutoMLConfig:
  - Task is 'classification' 
  - Primary metric is 'accuracy'
- - Featurization is 'auto'. We can know the features used in prediction in explantion model.They are "duration", "nr_employed" and "euribor3m", as in the figure below.
+ - Featurization is 'auto'. We can know the features used in prediction thanks to explantion model.The main features are "duration", "nr_employed" and "euribor3m", as in the figure below.
+<img src="./images/features.PNG">
+ - Number of cross validations is 5 folds.
+ - Enable ONNX compatible models as True. It let us save the model as onnx format.
+
+Among many algorithms, the chosen model with AutoML is Voting Ensemble. It combines the results of classifiers and votes for the classifier with the best accuracy. We can seee in the figure below one of these classifiers and the value of their hyperparameters. 
+
+<img src="./images/ensemble_details.PNG">
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
