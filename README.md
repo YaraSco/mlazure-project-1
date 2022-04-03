@@ -86,7 +86,10 @@ For future experiments, the areas of improvement can be as follow :
  <img src="./images/imbalanced_data_automl.PNG">
  
  Indeed, when we have an imbalanced dataset, the model is biased toward the class that has much data. As a solution, we can add a resampling function in "train.py". Or we can change the metric of comparison as the accuracy can be misleading. The confusion matrix or Area under ROC Curve are better metrics for an imbalanced dataset.
+ Also, the imbalanced accuracy is much useful in our case, because we have binary classification and imbalanced data. Here is the obtained value of imbalanced accurancy in AutoML.
  
+<img src="./images/metrics_automl.PNG">
+
   - If we had ressources, we could change the parameter sampler in hyperdrive configuration into Bayesian sampling. 
   - If it was not mandatory, we could choose a higher value for experiment_timeout_minutes in AutoML configuration.
 
