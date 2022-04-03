@@ -33,6 +33,9 @@ Secondly, we specify the "Accuracy", defined in "train.py", as the primary metri
 Thirdly, we define an early termination policy, Bandit Policy.
 Finally, we configure settings for resource allocation. The maximum number of training runs is "max_total_runs=24". We run concurrently 4 runs as our compute target is capable of. 
 
+Here is a screenshot of the widget after the submition of the experiment.
+<img src="./images/show_widget_hyperdrive.PNG">
+
 The classification algorithm is the Logistic Regression provided by  Scikit-learn. Indeed, we want to predict the attribute 'y' with classification, because as we explained, 'y' has two classes '0' and '1'. In the "train.py" script, we parse two hyperparameters "C" and "max_iter". 
  - "C" represents the inverse of regularization strength. We discover the range of (0.05, 10). We choose until 10, because smaller values cause stronger regularization. Th default is 1.0
  - "max_iter" represents the maximum number of iterations to converge. The default is 100. We choose higher values in our hyperparameter tuning 
