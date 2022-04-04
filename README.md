@@ -66,7 +66,7 @@ By understanding the [AutoML config class](https://docs.microsoft.com/en-us/pyth
 <img src="./images/features.PNG">
 
  - "verbosity" : logging.INFO. It writes on the log file.
- - Number of cross validations is 5 folds. It divides our training set into 5 folds to train on 4 folds and do the prediction on the fifth one. It helpsour model to not overfit.
+ - Number of cross validations is 5 folds. It divides our training set into 5 folds to train on 4 folds and do the prediction on the fifth one. It helps our model to not overfit.
  - Enable ONNX compatible models as True. It let us save the model in onnx format.
  
  We define the AutoML configuration as follow :
