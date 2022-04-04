@@ -64,6 +64,7 @@ By understanding the [AutoML config class](https://docs.microsoft.com/en-us/pyth
  - Primary metric is 'accuracy'. We choose the accuracy to compare the model with LogisticRegression used with hyperdrive.
  - Featurization is 'auto'. We can know the features used in prediction thanks to explantion model.The main features are "duration", "nr_employed" and "euribor3m", as in the figure below.
 <img src="./images/features.PNG">
+
  - "verbosity" : logging.INFO. It writes on the log file.
  - Number of cross validations is 5 folds. It divides our training set into 5 folds to train on 4 folds and do the prediction on the fifth one. It helpsour model to not overfit.
  - Enable ONNX compatible models as True. It let us save the model in onnx format.
